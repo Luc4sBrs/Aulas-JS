@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello World!</h1>
+    <h2 id="h2"> Java Script Digita:</h2>
+    <h3 class="h3">Teste 1</h3>
+    <h3 class="h3">Teste 2</h3>
+    <div id="bloco"></div>
+    <div>
+        <img id="imagem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png" >
+    </div>
+    <button id="botao">Clique Aqui!</button>
+    <button onclick="trocaImagem()">Outro botão</button>
+    <script>
+            console.log("Hello World")
+            //document.write("<h3>Olá</h3>")
+
+            //ID
+             const h2 = document.getElementById("h2");
+             console.log(h2);
+
+            //Uso com seletores
+             const h1 = document.querySelector("h1");
+             console.log(h1);
+             const h3 = document.querySelectorAll(".h3");
+             console.log(h3)
+
+            //Buscar elemento pelo nome da classe
+            const classH3 = document.getElementsByClassName("h3")
+            console.log(classH3)
+
+            //Manipulação de Elementos
+            //Texto
+            h2.textContent = "Novo Texto"
+
+            const div = document.getElementById("bloco");
+            div.innerHTML = "<h1>Título do Bloco</h1>";
+
+            const img = document.getElementById("imagem");
+            console.log(img.getAttribute("src"))
+            // Nova Imagem
+            img.setAttribute("src", "https://i.makeagif.com/media/11-16-2019/lok_uu.gif")
+            // img.removeAttribute("src");
+
+            img.style.border = "1px solid black";
+            img.style.borderRadius = "10px"
+
+            //Eventos
+            const button = document.getElementById("botao")
+            button.addEventListener("click", function(){
+                console.log("Entrou!")
+                img.setAttribute("src", "https://i.makeagif.com/media/11-16-2019/lok_uu.gif")
+            })
+
+            function trocaImagem(){
+                img.setAttribute("src", "https://s.aficionados.com.br/imagens/jimmy-neutron_cke.jpg")
+            }
+
+    </script>
+</body>
+</html> 
