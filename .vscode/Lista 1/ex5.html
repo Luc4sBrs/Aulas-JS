@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="A" src="https://pm1.aminoapps.com/6824/e6657ac3090d2839f85288b38d6cd47385e684d8v2_00.jpg" >    
+
+    <button id="p">Transforme-se</button>
+
+    <script>
+
+            const image = [
+            "https://i.pinimg.com/736x/2f/a7/e2/2fa7e202a79a8b8390fd85db2afd9e8c.jpg",
+            "https://i.pinimg.com/736x/3a/4f/36/3a4f366d29c2d0c1d0501a9e8896309d.jpg",
+            "https://tse1.mm.bing.net/th/id/OIP.tKUcOaiQVS9fLHgFpc5b3wHaKj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "https://th.bing.com/th/id/OIP.4E9aWOdVHRlCnDuTitfTSAHaHv?w=203&h=212&c=7&r=0&o=7&pid=1.7&rm=3"
+            ];
+
+            const img = document.getElementById("A")
+            const button05 = document.getElementById("p")
+            let contador = 0
+
+            img.style.width = "200px"
+
+            button05.style.display = "flex"
+            button05.style.marginTop = "20px"
+
+            button05.addEventListener("click", (event) => {
+
+                contador ++
+
+                if (contador > 3){
+
+                contador = 0
+
+            }
+
+            img.setAttribute("src", image[contador])
+
+            })
+
+    </script>
+
+</body>
+</html>

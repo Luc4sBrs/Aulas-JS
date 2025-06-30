@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto" style="width: 300px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis impedit rerum quaerat quidem facere nobis dolorum minus ea odio vel, reprehenderit molestiae, dicta voluptate, sint consequuntur laudantium illum sunt voluptas.</p>
+    <button id="alterar"> alterar</button>
+    <script>
+
+            const p02 = document.querySelector("#texto")
+            const button03 = document.querySelector("#alterar")
+            let isButtonOn = false
+
+            button03.addEventListener("click", (event) => {
+
+            isButtonOn = !isButtonOn;
+
+            p02.style.visibility = isButtonOn ? "visible" : "hidden"
+
+})
+    </script>
+</body>
+</html>
