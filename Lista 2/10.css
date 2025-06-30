@@ -1,0 +1,15 @@
+.texto {
+
+    color: rgb(0, 136, 255);
+    font-weight: normal;
+    transition: color 0.3s, font-weight 0.3s;
+
+}
+
+
+.estiloDestaque {
+
+    color: red;
+    font-weight: bold;
+
+}

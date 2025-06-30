@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="1" src="https://i.pinimg.com/originals/27/77/6c/27776cc292cedb3e2435e3a6b7672cb0.jpg">
+
+    <button id="sa">Aumenta</button>
+
+    <button id="po">Diminui</button>
+
+    <script>
+
+        const image = document.getElementById("1")
+
+        const btnCresce = document.getElementById("sa")
+
+        const btnDiminui = document.getElementById("po")
+
+        btnCresce.addEventListener("click", (event) => {
+
+            image.style.width = "400px"
+
+        })
+
+        btnDiminui.addEventListener("click", (event) => {
+
+            image.style.width = "200px"
+
+        })
+
+
+    </script>
+
+</body>
+</html>

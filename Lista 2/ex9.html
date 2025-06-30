@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="A">
+    
+    <button id="1">Amarelo</button>
+
+    <button id="2">Azul</button>
+
+    <button id="3">Preto</button>
+
+    <button id="4">Vermelho</button>
+
+    <script>
+
+        const corAm = document.getElementById("1")
+        const corAz = document.getElementById("2")
+        const corPr = document.getElementById("3")
+        const corVe = document.getElementById("4")
+        const fundo = document.getElementById("A")
+
+        corAm.addEventListener("click", (event) =>{
+
+            fundo.style.backgroundColor = "yellow"
+        })
+
+        corAz.addEventListener("click", (event) =>{
+
+            fundo.style.backgroundColor = "blue"
+        })
+
+        corPr.addEventListener("click", (event) =>{
+
+            fundo.style.backgroundColor = "black"
+        })
+
+        corVe.addEventListener("click", (event) =>{
+
+            fundo.style.backgroundColor = "red"
+        })
+
+    </script>
+
+
+</body>
+</html>

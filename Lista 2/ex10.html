@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="10.css">
+</head>
+<body>
+    
+    <h1 class="texto">Bem Vindo!</h1>
+
+    <button id="add">Adicionar estilo</button>
+    
+    <button id="rev">Remover estilo</button>
+
+    <script>
+
+        const adicionar = document.getElementById("add");
+
+        const remover = document.getElementById("rev");
+
+        const texto = document.querySelector(".texto");
+
+        adicionar.addEventListener("click", () => {
+
+            texto.classList.add("estiloDestaque");
+
+        });
+
+        remover.addEventListener("click", () => {
+
+            texto.classList.remove("estiloDestaque");
+
+        });
+
+    </script>
+
+
+</body>
+</html>

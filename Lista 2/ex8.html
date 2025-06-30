@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+
+        <input type="number" id="numero1" placeholder="Digite o primeiro número">
+
+    </div>
+    
+    <div>
+
+        <input type="number" id="numero2" placeholder="Digite o segundo número">
+
+    </div>
+    
+    <button id="calcular">Calcular Soma</button>
+    
+    <div id="resultado"></div>
+
+    <script>
+
+        document.getElementById('calcular').addEventListener('click', function() {
+
+            const num1 = parseFloat(document.getElementById('numero1').value) || 0;
+
+            const num2 = parseFloat(document.getElementById('numero2').value) || 0;
+            
+            const soma = num1 + num2;
+            
+            document.getElementById('resultado').textContent = `Resultado: ${soma}`;
+        });
+        
+    </script>
+
+</body>
+</html>
