@@ -1,0 +1,31 @@
+body{
+
+    text-align: center;
+
+}
+
+input{
+
+    border: 2px rgb(173, 0, 0);
+    border-radius: 1px;
+    height: 20px;
+    color: red;
+
+}
+
+p{
+
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+
+}
+
+button{
+
+    background-color: violet;
+    color: black;
+    padding: 5px 4px 5px 5px;
+
+}
