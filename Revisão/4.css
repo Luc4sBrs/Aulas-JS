@@ -4,20 +4,16 @@ body {
   font-family: sans-serif;
 }
 
-input, button {
+input, select, button {
   padding: 8px;
   margin: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-#minha-lista {
-  list-style-type: disc;
-  padding-left: 40px;
+#resultado-calculadora {
+  font-size: 18px;
+  font-weight: bold;
   margin-top: 10px;
-}
-
-#minha-lista li {
-  color: #444;
-  font-size: 16px;
+  color: #222;
 }
